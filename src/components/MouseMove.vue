@@ -48,7 +48,7 @@ export default {
   // display: flex;
   // align-items: center;
   // justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 0;
   right: 0;
@@ -64,6 +64,7 @@ export default {
   //为被遮挡元素上层使用z-index属性的元素添加以下样式：
   z-index: 999;
   pointer-events: none;
+
   span {
     width: 10px;
     height: 10px;
@@ -75,6 +76,7 @@ export default {
     -webkit-animation: blow 4s linear infinite;
   }
 }
+
 /*这里是定义里一个动画效果*/
 
 @keyframes blow {
@@ -88,7 +90,7 @@ export default {
 值为0deg，则图像无变化。若值未设置，默认值是0deg。
 该值虽然没有最大值，超过360deg的值相当于又绕一圈。
 */
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(90deg);
     /*这里是浏览器兼容*/
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);

@@ -4,12 +4,14 @@ import router from './router'
 import store from './store/index'
 import './assets/css/index.scss'
 import ElementUI from 'element-ui'
+import VueParticles from 'vue-particles'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/js/iconfont.js'
 import '@/assets/js/iconfont1.js'
 import '@/assets/js/iconfont2.js'
 import '@/assets/js/iconfont3.js'
-import $ from 'jquery'
+
+Vue.use(VueParticles)
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false
@@ -20,6 +22,5 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>',
-  $
+  template: '<App/>'
 })

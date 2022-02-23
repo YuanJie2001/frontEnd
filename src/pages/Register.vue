@@ -93,7 +93,7 @@ export default {
       params.append('birth', datetime)
       params.append('introduction', this.registerForm.introduction)
       params.append('location', this.registerForm.location)
-      params.append('avator', 'userImages/卡哇伊.png')
+      params.append('avator', '/userImages/卡哇伊.png')
       register(params)
         .then(res => {
           if (res.code === 1) {
@@ -107,6 +107,7 @@ export default {
         })
         .catch(err => {
           _this.notify('注册失败', 'error')
+          console.log(err)
         })
     }
   }

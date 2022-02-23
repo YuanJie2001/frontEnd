@@ -17,6 +17,7 @@
     "jquery": "^3.6.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "migu-music-api": "^1.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.0.7",
     "vuex": "^3.0.1"
@@ -75,6 +76,7 @@
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
+    "vue-particles": "^1.0.9",
     "vue-router": "^3.0.7",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
